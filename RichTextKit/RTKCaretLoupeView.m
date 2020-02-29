@@ -1,6 +1,6 @@
 //
-//  EditorSelectionPlacementLoopView.m
-//  CoreTextEditor
+//  CustomView.m
+//  MaskTest
 //
 //  The MIT License
 //  
@@ -25,18 +25,17 @@
 //  THE SOFTWARE.
 
 
-#import "RTKSelectionLoupeView.h"
+#import "RTKCaretLoupeView.h"
 #import <QuartzCore/QuartzCore.h>
 
+@implementation RTKCaretLoupeView
 
-@implementation RTKSelectionLoupeView
-
-- (id)initWithFrame:(CGRect)frame {
-	UIImage *mask = [UIImage imageNamed:@"RTKSelectionLoupeMask.png"];
+- (instancetype)initWithFrame:(CGRect)frame {
+	UIImage *mask = [UIImage imageNamed:@"RTKCaretLoupeMask.png"];
 	if (self = [super initWithFrame:CGRectMake(0.0f, 0.0f, mask.size.width, mask.size.height)]) {
 		self.backgroundColor = [UIColor clearColor];
 		_mask = mask;
-		_loop = [UIImage imageNamed:@"RTKSelectionLoupe.png"];
+		_loop = [UIImage imageNamed:@"RTKCaretLoupe.png"];
 	}
 	return self;
 }

@@ -1,5 +1,5 @@
 //
-//  EditorScrollView.m
+//  EditorSelectionHandle.m
 //  CoreTextEditor
 //
 //  The MIT License
@@ -25,38 +25,40 @@
 //  THE SOFTWARE.
 
 
-#import "RTKView.h"
-#import "RTKDocument.h"
+#import "RTKSelectionHandle.h"
 
-@implementation RTKView
+@implementation RTKSelectionHandle
 
-- (id)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)docDel {
-	if ((self = [super initWithFrame:frame])) {
-		
-		self.autoresizesSubviews = NO;
-		//self.delegate = self;
-		self.userInteractionEnabled = YES;
-		self.minimumZoomScale = 1.0f;
-		self.maximumZoomScale = 1.0f;
-		self.scrollEnabled  = YES;
-		self.bounces = YES;
-		self.bouncesZoom = NO;
-		self.contentSize = CGSizeMake(frame.size.width, frame.size.height ); // will auto rezies baed on content.
-		self.scrollsToTop = YES;
-		self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-		
-		// Doc view will self re-adjust height based on text length.
-		docView = [[RTKDocument alloc] initWithFrame:CGRectInset(frame, 5.0f, 0.0f) delegate:docDel];
-		[docView setParentScrollView:self]; // TODO: move to a delegate.
-		[self addSubview:docView];
-		
-		_dragEditingActive = NO;
 
-	}
-	return self;
+- (instancetype)initWithFrame:(CGRect)frame position:(RTKSelectionHandlePostition)position {
+    if ((self = [super initWithFrame:frame])) {
+		// Initialization code
+		[self setBackgroundColor:[UIColor blueColor]];
+
+		_position = position;
+		_bull = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"RTKSelectionHandle.png"]];
+		
+		[self addSubview:_bull];
+		
+    }
+    return self;
 }
 
-#pragma mark -
-#pragma mark Touch Events
+-(void)setCaretRect:(CGRect)rect;
+{
+	[self setFrame:rect];
+
+	CGPoint myCenter = CGPointZero;
+	
+	myCenter.x = self.bounds.size.width / 2;
+	if (_position == RTKSelectionHandlePostitionStart) {
+		myCenter.y = -6;
+	} else {
+		myCenter.y = self.bounds.size.height + 6;
+	}
+	[_bull setCenter:myCenter];
+	[_bull setNeedsDisplay];
+}
+
 
 @end

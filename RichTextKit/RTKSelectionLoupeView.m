@@ -1,5 +1,5 @@
 //
-//  EditorScrollView.h
+//  EditorSelectionPlacementLoopView.m
 //  CoreTextEditor
 //
 //  The MIT License
@@ -25,18 +25,20 @@
 //  THE SOFTWARE.
 
 
-#import <UIKit/UIKit.h>
+#import "RTKSelectionLoupeView.h"
+#import <QuartzCore/QuartzCore.h>
 
-@class RTKDocument;
-@protocol RTKDocumentDelegate;
 
-@interface RTKView : UIScrollView {
-	RTKDocument *docView;	
-	
-	bool _dragEditingActive;
-	bool _hasMoved;
+@implementation RTKSelectionLoupeView
+
+- (instancetype)initWithFrame:(CGRect)frame {
+	UIImage *mask = [UIImage imageNamed:@"RTKSelectionLoupeMask.png"];
+	if (self = [super initWithFrame:CGRectMake(0.0f, 0.0f, mask.size.width, mask.size.height)]) {
+		self.backgroundColor = [UIColor clearColor];
+		_mask = mask;
+		_loop = [UIImage imageNamed:@"RTKSelectionLoupe.png"];
+	}
+	return self;
 }
-
-- (id)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)delegate;
 
 @end

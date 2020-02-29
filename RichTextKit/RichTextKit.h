@@ -1,6 +1,6 @@
 //
-//  EditorTextPosition.m
-//  CoreTextEditor
+//  RichTextKit.h
+//  RichTextKit
 //
 //  The MIT License
 //  
@@ -25,19 +25,15 @@
 //  THE SOFTWARE.
 
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+// Include your plugin related headers here...
 #import "RTKTextPosition.h"
-
-
-@implementation RTKTextPosition
-
-@synthesize position;
-
-+ (id) positionWithInteger:(NSUInteger)pos;
-{
-	RTKTextPosition *e = [[RTKTextPosition alloc] init];
-	e.position = pos;
-    
-	return e;
-}
-
-@end
+#import "RTKTextRange.h"
+#import "RTKCaret.h"
+#import "RTKCaretLoupeView.h"
+#import "RTKSelectionHandle.h"
+#import "RTKSelectionLoupeView.h"
+#import "RTKDocument.h"
+#import "RTKView.h"

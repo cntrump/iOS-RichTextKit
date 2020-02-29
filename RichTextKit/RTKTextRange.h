@@ -1,5 +1,5 @@
 //
-//  EditorCaret.m
+//  EditorTextRange.h
 //  CoreTextEditor
 //
 //  The MIT License
@@ -25,49 +25,18 @@
 //  THE SOFTWARE.
 
 
-#import "RTKCaret.h"
+#import <Foundation/Foundation.h>
+#import "RTKTextPosition.h"
 
-
-@implementation RTKCaret
-
-@synthesize animated;
-
-- (id)initWithFrame:(CGRect)frame {
-    if ((self = [super initWithFrame:frame])) {
-        // Initialization code
-		[self setBackgroundColor:[UIColor blueColor]];
-		[self animationFadeOut];
-    }
-    return self;
+@interface RTKTextRange : UITextRange <NSCopying> {
+	@private
+	UITextPosition *_start;
+	UITextPosition *_end;
 }
 
--(void)animationFadeIn {
-	if (self.animated) {
-		[UIView beginAnimations:nil context:nil];
-		[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-		[UIView setAnimationDuration:0.25];
-		[UIView setAnimationDelegate:self];
-		[UIView setAnimationDidStopSelector:@selector(animationFadeOut)];
-		self.alpha = 1.0f;
-		[UIView commitAnimations];
-	} else {
-		self.alpha = 1.0f;
-	}
-}
-
--(void)animationFadeOut {
-	if (self.animated) {
-		[UIView beginAnimations:nil context:nil];
-		[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-		[UIView setAnimationDelay:0.45];
-		[UIView setAnimationDuration:0.25];
-		[UIView setAnimationDelegate:self];
-		[UIView setAnimationDidStopSelector:@selector(animationFadeIn)];
-		self.alpha = 0.0f;
-		[UIView commitAnimations];
-	} else {
-		self.alpha = 1.0f;
-	}
-}
++ (instancetype)rangeWithStart:(RTKTextPosition *)startPosition end:(RTKTextPosition *)endPosition;
+- (void)setStartPostion:(RTKTextPosition *)position;
+- (void)setEndPostion:(RTKTextPosition *)position;
+- (NSUInteger)length;
 
 @end

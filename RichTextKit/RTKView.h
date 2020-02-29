@@ -1,6 +1,6 @@
 //
-//  RichTextKit.h
-//  RichTextKit
+//  EditorScrollView.h
+//  CoreTextEditor
 //
 //  The MIT License
 //  
@@ -25,14 +25,18 @@
 //  THE SOFTWARE.
 
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-// Include your plugin related headers here...
-#import "RTKTextPosition.h"
-#import "RTKTextRange.h"
-#import "RTKCaret.h"
-#import "RTKCaretLoupeView.h"
-#import "RTKSelectionHandle.h"
-#import "RTKSelectionLoupeView.h"
-#import "RTKDocument.h"
-#import "RTKView.h"
+@class RTKDocument;
+@protocol RTKDocumentDelegate;
+
+@interface RTKView : UIScrollView {
+	RTKDocument *docView;	
+	
+	bool _dragEditingActive;
+	bool _hasMoved;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)delegate;
+
+@end

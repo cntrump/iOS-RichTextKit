@@ -1,5 +1,5 @@
 //
-//  EditorTextRange.m
+//  EditorSelectionHandle.h
 //  CoreTextEditor
 //
 //  The MIT License
@@ -25,61 +25,21 @@
 //  THE SOFTWARE.
 
 
-#import "RTKTextRange.h"
-#import "RTKTextPosition.h"
+#import <UIKit/UIKit.h>
 
-@implementation RTKTextRange
-+ (id)rangeWithStart:(RTKTextPosition *)startPosition end:(RTKTextPosition *)endPosition;
-{
-	RTKTextRange *e = [[RTKTextRange alloc] init];
-	[e setStartPostion:startPosition];
-	[e setEndPostion:endPosition];
+typedef enum {
+    RTKSelectionHandlePostitionNone = 0,
+	RTKSelectionHandlePostitionStart,
+    RTKSelectionHandlePostitionEnd
+} RTKSelectionHandlePostition;
 
-	return e;
+@interface RTKSelectionHandle : UIView {
+	RTKSelectionHandlePostition _position;
+	UIImageView *_bull;
 }
 
-- (BOOL)isEmpty;
-{
-	return ([(RTKTextPosition *)_end position] - [(RTKTextPosition *)_start position]) == 0;
-}
-
-- (int)length;
-{
-	return [(RTKTextPosition *)_end position] - [(RTKTextPosition *)_start position];
-}
-
-- (UITextPosition *)start;
-{
-	return _start;
-}
-
-- (void)setStartPostion:(RTKTextPosition *)position;
-{
-	_start = position;
-}
-
-- (UITextPosition *)end;
-{
-	return _end;
-}
-
-- (void)setEndPostion:(RTKTextPosition *)position;
-{
-	_end = position;
-}
-
-#pragma mark -
-#pragma mark NSCopying;
-
-- (id)copyWithZone:(NSZone *)zone
-{
-	RTKTextRange *copy = [[[self class] allocWithZone: zone] init];
-
-	[copy setEndPostion:(RTKTextPosition *)[self end]];
-	[copy setStartPostion:(RTKTextPosition *)[self start]];
-	
-	return copy;
-}
+- (instancetype)initWithFrame:(CGRect)frame position:(RTKSelectionHandlePostition)position;
+- (void)setCaretRect:(CGRect)rect;
 
 
 @end

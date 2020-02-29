@@ -33,7 +33,7 @@
 @synthesize magnifyView;
 @synthesize touchPoint;
 
-- (id)init {
+- (instancetype)init {
 	
 	_animated = NO;
 	

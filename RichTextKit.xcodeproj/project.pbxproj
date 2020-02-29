@@ -8,34 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		151AFCE0240763A800631664 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151AFCDF240763A800631664 /* Launch Screen.storyboard */; };
+		15236676240AA513008861E0 /* RichTextKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 15236674240AA513008861E0 /* RichTextKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15236679240AA513008861E0 /* RichTextKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15236672240AA513008861E0 /* RichTextKit.framework */; };
+		15236691240AA56D008861E0 /* RTKCaretLoupeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1523667F240AA56C008861E0 /* RTKCaretLoupeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15236692240AA56D008861E0 /* RTKSelectionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 15236680240AA56C008861E0 /* RTKSelectionHandle.m */; };
+		15236693240AA56D008861E0 /* RTKTextRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 15236681240AA56C008861E0 /* RTKTextRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15236694240AA56D008861E0 /* RTKDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 15236682240AA56C008861E0 /* RTKDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15236695240AA56D008861E0 /* RTKLoupeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15236683240AA56C008861E0 /* RTKLoupeView.m */; };
+		15236696240AA56D008861E0 /* RTKSelectionLoupeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 15236684240AA56C008861E0 /* RTKSelectionLoupeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15236697240AA56D008861E0 /* RTKSelectionLoupeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15236685240AA56C008861E0 /* RTKSelectionLoupeView.m */; };
+		15236698240AA56D008861E0 /* RTKCaretLoupeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15236686240AA56C008861E0 /* RTKCaretLoupeView.m */; };
+		15236699240AA56D008861E0 /* RTKTextPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 15236687240AA56C008861E0 /* RTKTextPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1523669A240AA56D008861E0 /* RTKCaret.m in Sources */ = {isa = PBXBuildFile; fileRef = 15236688240AA56C008861E0 /* RTKCaret.m */; };
+		1523669B240AA56D008861E0 /* RTKCaret.h in Headers */ = {isa = PBXBuildFile; fileRef = 15236689240AA56C008861E0 /* RTKCaret.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1523669C240AA56D008861E0 /* RTKTextPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1523668A240AA56C008861E0 /* RTKTextPosition.m */; };
+		1523669D240AA56D008861E0 /* RTKTextRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 1523668B240AA56C008861E0 /* RTKTextRange.m */; };
+		1523669E240AA56D008861E0 /* RTKLoupeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1523668C240AA56C008861E0 /* RTKLoupeView.h */; };
+		1523669F240AA56D008861E0 /* RTKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1523668D240AA56C008861E0 /* RTKDocument.m */; };
+		152366A0240AA56D008861E0 /* RTKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1523668E240AA56C008861E0 /* RTKView.m */; };
+		152366A1240AA56D008861E0 /* RTKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1523668F240AA56C008861E0 /* RTKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		152366A2240AA56D008861E0 /* RTKSelectionHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 15236690240AA56D008861E0 /* RTKSelectionHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D3623260D0F684500981E51 /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DemoAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28D7ACF80DDB3853001CB0EB /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* DemoViewController.m */; };
-		DD7CFA0911721C4B0028A53F /* RichTextKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* RichTextKit_Prefix.pch */; };
-		DD7CFA0D11721CC20028A53F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		DD7CFA3711721D890028A53F /* RichTextKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7CFA3611721D890028A53F /* RichTextKit.h */; };
-		DDED24731178085C00DAD7DB /* libRichTextKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7CF8E911720A330028A53F /* libRichTextKit.a */; };
-		DDF4001311947346001CB9E3 /* RTKCaret.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000111947346001CB9E3 /* RTKCaret.h */; };
-		DDF4001411947346001CB9E3 /* RTKCaret.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4000211947346001CB9E3 /* RTKCaret.m */; };
-		DDF4001511947346001CB9E3 /* RTKCaretLoupeView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000311947346001CB9E3 /* RTKCaretLoupeView.h */; };
-		DDF4001611947346001CB9E3 /* RTKCaretLoupeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4000411947346001CB9E3 /* RTKCaretLoupeView.m */; };
-		DDF4001711947346001CB9E3 /* RTKDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000511947346001CB9E3 /* RTKDocument.h */; };
-		DDF4001811947346001CB9E3 /* RTKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4000611947346001CB9E3 /* RTKDocument.m */; };
-		DDF4001911947346001CB9E3 /* RTKLoupeView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000711947346001CB9E3 /* RTKLoupeView.h */; };
-		DDF4001A11947346001CB9E3 /* RTKLoupeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4000811947346001CB9E3 /* RTKLoupeView.m */; };
-		DDF4001B11947346001CB9E3 /* RTKSelectionHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000911947346001CB9E3 /* RTKSelectionHandle.h */; };
-		DDF4001C11947346001CB9E3 /* RTKSelectionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4000A11947346001CB9E3 /* RTKSelectionHandle.m */; };
-		DDF4001D11947346001CB9E3 /* RTKSelectionLoupeView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000B11947346001CB9E3 /* RTKSelectionLoupeView.h */; };
-		DDF4001E11947346001CB9E3 /* RTKSelectionLoupeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4000C11947346001CB9E3 /* RTKSelectionLoupeView.m */; };
-		DDF4001F11947346001CB9E3 /* RTKTextPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000D11947346001CB9E3 /* RTKTextPosition.h */; };
-		DDF4002011947346001CB9E3 /* RTKTextPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4000E11947346001CB9E3 /* RTKTextPosition.m */; };
-		DDF4002111947346001CB9E3 /* RTKTextRange.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4000F11947346001CB9E3 /* RTKTextRange.h */; };
-		DDF4002211947346001CB9E3 /* RTKTextRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4001011947346001CB9E3 /* RTKTextRange.m */; };
-		DDF4002311947346001CB9E3 /* RTKView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4001111947346001CB9E3 /* RTKView.h */; };
-		DDF4002411947346001CB9E3 /* RTKView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4001211947346001CB9E3 /* RTKView.m */; };
 		DDF4002B11947364001CB9E3 /* RTKCaretLoupe.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF4002511947364001CB9E3 /* RTKCaretLoupe.png */; };
 		DDF4002C11947364001CB9E3 /* RTKCaretLoupeMask.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF4002611947364001CB9E3 /* RTKCaretLoupeMask.png */; };
 		DDF4002D11947364001CB9E3 /* RTKSelectionLoupe.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF4002711947364001CB9E3 /* RTKSelectionLoupe.png */; };
@@ -46,18 +44,39 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD7CFCBC11725E980028A53F /* PBXContainerItemProxy */ = {
+		15236677240AA513008861E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD7CF8E811720A330028A53F;
-			remoteInfo = RichTextKitMobile;
+			remoteGlobalIDString = 15236671240AA513008861E0;
+			remoteInfo = RichTextKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		151AFCDE240762F700631664 /* RichTextKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RichTextKit.entitlements; sourceTree = "<group>"; };
 		151AFCDF240763A800631664 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		15236672240AA513008861E0 /* RichTextKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RichTextKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15236674240AA513008861E0 /* RichTextKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichTextKit.h; sourceTree = "<group>"; };
+		15236675240AA513008861E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1523667F240AA56C008861E0 /* RTKCaretLoupeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKCaretLoupeView.h; sourceTree = "<group>"; };
+		15236680240AA56C008861E0 /* RTKSelectionHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKSelectionHandle.m; sourceTree = "<group>"; };
+		15236681240AA56C008861E0 /* RTKTextRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKTextRange.h; sourceTree = "<group>"; };
+		15236682240AA56C008861E0 /* RTKDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKDocument.h; sourceTree = "<group>"; };
+		15236683240AA56C008861E0 /* RTKLoupeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKLoupeView.m; sourceTree = "<group>"; };
+		15236684240AA56C008861E0 /* RTKSelectionLoupeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKSelectionLoupeView.h; sourceTree = "<group>"; };
+		15236685240AA56C008861E0 /* RTKSelectionLoupeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKSelectionLoupeView.m; sourceTree = "<group>"; };
+		15236686240AA56C008861E0 /* RTKCaretLoupeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKCaretLoupeView.m; sourceTree = "<group>"; };
+		15236687240AA56C008861E0 /* RTKTextPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKTextPosition.h; sourceTree = "<group>"; };
+		15236688240AA56C008861E0 /* RTKCaret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKCaret.m; sourceTree = "<group>"; };
+		15236689240AA56C008861E0 /* RTKCaret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKCaret.h; sourceTree = "<group>"; };
+		1523668A240AA56C008861E0 /* RTKTextPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKTextPosition.m; sourceTree = "<group>"; };
+		1523668B240AA56C008861E0 /* RTKTextRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKTextRange.m; sourceTree = "<group>"; };
+		1523668C240AA56C008861E0 /* RTKLoupeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKLoupeView.h; sourceTree = "<group>"; };
+		1523668D240AA56C008861E0 /* RTKDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKDocument.m; sourceTree = "<group>"; };
+		1523668E240AA56C008861E0 /* RTKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKView.m; sourceTree = "<group>"; };
+		1523668F240AA56C008861E0 /* RTKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKView.h; sourceTree = "<group>"; };
+		15236690240AA56D008861E0 /* RTKSelectionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKSelectionHandle.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* DemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* DemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
@@ -69,27 +88,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* RichTextKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextKit_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* RichTextKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RichTextKit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		DD7CF8E911720A330028A53F /* libRichTextKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRichTextKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7CF970117211070028A53F /* RichTextKit.framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RichTextKit.framework-Info.plist"; sourceTree = "<group>"; };
-		DD7CFA3611721D890028A53F /* RichTextKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RichTextKit.h; path = include/RichTextKit/RichTextKit.h; sourceTree = "<group>"; };
-		DDF4000111947346001CB9E3 /* RTKCaret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKCaret.h; path = include/RichTextKit/RTKCaret.h; sourceTree = "<group>"; };
-		DDF4000211947346001CB9E3 /* RTKCaret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKCaret.m; path = include/RichTextKit/RTKCaret.m; sourceTree = "<group>"; };
-		DDF4000311947346001CB9E3 /* RTKCaretLoupeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKCaretLoupeView.h; path = include/RichTextKit/RTKCaretLoupeView.h; sourceTree = "<group>"; };
-		DDF4000411947346001CB9E3 /* RTKCaretLoupeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKCaretLoupeView.m; path = include/RichTextKit/RTKCaretLoupeView.m; sourceTree = "<group>"; };
-		DDF4000511947346001CB9E3 /* RTKDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKDocument.h; path = include/RichTextKit/RTKDocument.h; sourceTree = "<group>"; };
-		DDF4000611947346001CB9E3 /* RTKDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKDocument.m; path = include/RichTextKit/RTKDocument.m; sourceTree = "<group>"; };
-		DDF4000711947346001CB9E3 /* RTKLoupeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKLoupeView.h; path = include/RichTextKit/RTKLoupeView.h; sourceTree = "<group>"; };
-		DDF4000811947346001CB9E3 /* RTKLoupeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKLoupeView.m; path = include/RichTextKit/RTKLoupeView.m; sourceTree = "<group>"; };
-		DDF4000911947346001CB9E3 /* RTKSelectionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKSelectionHandle.h; path = include/RichTextKit/RTKSelectionHandle.h; sourceTree = "<group>"; };
-		DDF4000A11947346001CB9E3 /* RTKSelectionHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKSelectionHandle.m; path = include/RichTextKit/RTKSelectionHandle.m; sourceTree = "<group>"; };
-		DDF4000B11947346001CB9E3 /* RTKSelectionLoupeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKSelectionLoupeView.h; path = include/RichTextKit/RTKSelectionLoupeView.h; sourceTree = "<group>"; };
-		DDF4000C11947346001CB9E3 /* RTKSelectionLoupeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKSelectionLoupeView.m; path = include/RichTextKit/RTKSelectionLoupeView.m; sourceTree = "<group>"; };
-		DDF4000D11947346001CB9E3 /* RTKTextPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKTextPosition.h; path = include/RichTextKit/RTKTextPosition.h; sourceTree = "<group>"; };
-		DDF4000E11947346001CB9E3 /* RTKTextPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKTextPosition.m; path = include/RichTextKit/RTKTextPosition.m; sourceTree = "<group>"; };
-		DDF4000F11947346001CB9E3 /* RTKTextRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKTextRange.h; path = include/RichTextKit/RTKTextRange.h; sourceTree = "<group>"; };
-		DDF4001011947346001CB9E3 /* RTKTextRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKTextRange.m; path = include/RichTextKit/RTKTextRange.m; sourceTree = "<group>"; };
-		DDF4001111947346001CB9E3 /* RTKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTKView.h; path = include/RichTextKit/RTKView.h; sourceTree = "<group>"; };
-		DDF4001211947346001CB9E3 /* RTKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTKView.m; path = include/RichTextKit/RTKView.m; sourceTree = "<group>"; };
 		DDF4002511947364001CB9E3 /* RTKCaretLoupe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTKCaretLoupe.png; sourceTree = "<group>"; };
 		DDF4002611947364001CB9E3 /* RTKCaretLoupeMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTKCaretLoupeMask.png; sourceTree = "<group>"; };
 		DDF4002711947364001CB9E3 /* RTKSelectionLoupe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTKSelectionLoupe.png; sourceTree = "<group>"; };
@@ -100,24 +99,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1523666F240AA513008861E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDED24731178085C00DAD7DB /* libRichTextKit.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				15236679240AA513008861E0 /* RichTextKit.framework in Frameworks */,
 				DDF40048119474C3001CB9E3 /* CoreText.framework in Frameworks */,
 				DDF4004A119474C3001CB9E3 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD7CF8E711720A330028A53F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD7CFA0D11721CC20028A53F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,11 +133,38 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		15236673240AA513008861E0 /* RichTextKit */ = {
+			isa = PBXGroup;
+			children = (
+				15236674240AA513008861E0 /* RichTextKit.h */,
+				15236689240AA56C008861E0 /* RTKCaret.h */,
+				15236688240AA56C008861E0 /* RTKCaret.m */,
+				1523667F240AA56C008861E0 /* RTKCaretLoupeView.h */,
+				15236686240AA56C008861E0 /* RTKCaretLoupeView.m */,
+				15236682240AA56C008861E0 /* RTKDocument.h */,
+				1523668D240AA56C008861E0 /* RTKDocument.m */,
+				1523668C240AA56C008861E0 /* RTKLoupeView.h */,
+				15236683240AA56C008861E0 /* RTKLoupeView.m */,
+				15236690240AA56D008861E0 /* RTKSelectionHandle.h */,
+				15236680240AA56C008861E0 /* RTKSelectionHandle.m */,
+				15236684240AA56C008861E0 /* RTKSelectionLoupeView.h */,
+				15236685240AA56C008861E0 /* RTKSelectionLoupeView.m */,
+				15236687240AA56C008861E0 /* RTKTextPosition.h */,
+				1523668A240AA56C008861E0 /* RTKTextPosition.m */,
+				15236681240AA56C008861E0 /* RTKTextRange.h */,
+				1523668B240AA56C008861E0 /* RTKTextRange.m */,
+				1523668F240AA56C008861E0 /* RTKView.h */,
+				1523668E240AA56C008861E0 /* RTKView.m */,
+				15236675240AA513008861E0 /* Info.plist */,
+			);
+			path = RichTextKit;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* RichTextKit.app */,
-				DD7CF8E911720A330028A53F /* libRichTextKit.a */,
+				15236672240AA513008861E0 /* RichTextKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				151AFCDE240762F700631664 /* RichTextKit.entitlements */,
-				DD7CF92311720D8B0028A53F /* RichTextKit Framework */,
+				15236673240AA513008861E0 /* RichTextKit */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -194,72 +219,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD7CF92311720D8B0028A53F /* RichTextKit Framework */ = {
-			isa = PBXGroup;
-			children = (
-				DD7CFA3611721D890028A53F /* RichTextKit.h */,
-				DDF4003D1194740F001CB9E3 /* Headers */,
-				DDF4003E11947418001CB9E3 /* Implementations */,
-			);
-			name = "RichTextKit Framework";
-			sourceTree = "<group>";
-		};
-		DDF4003D1194740F001CB9E3 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				DDF4000111947346001CB9E3 /* RTKCaret.h */,
-				DDF4000311947346001CB9E3 /* RTKCaretLoupeView.h */,
-				DDF4000511947346001CB9E3 /* RTKDocument.h */,
-				DDF4000711947346001CB9E3 /* RTKLoupeView.h */,
-				DDF4000911947346001CB9E3 /* RTKSelectionHandle.h */,
-				DDF4000B11947346001CB9E3 /* RTKSelectionLoupeView.h */,
-				DDF4000D11947346001CB9E3 /* RTKTextPosition.h */,
-				DDF4000F11947346001CB9E3 /* RTKTextRange.h */,
-				DDF4001111947346001CB9E3 /* RTKView.h */,
-			);
-			name = Headers;
-			sourceTree = "<group>";
-		};
-		DDF4003E11947418001CB9E3 /* Implementations */ = {
-			isa = PBXGroup;
-			children = (
-				DDF4000211947346001CB9E3 /* RTKCaret.m */,
-				DDF4000411947346001CB9E3 /* RTKCaretLoupeView.m */,
-				DDF4000611947346001CB9E3 /* RTKDocument.m */,
-				DDF4000811947346001CB9E3 /* RTKLoupeView.m */,
-				DDF4000A11947346001CB9E3 /* RTKSelectionHandle.m */,
-				DDF4000C11947346001CB9E3 /* RTKSelectionLoupeView.m */,
-				DDF4000E11947346001CB9E3 /* RTKTextPosition.m */,
-				DDF4001011947346001CB9E3 /* RTKTextRange.m */,
-				DDF4001211947346001CB9E3 /* RTKView.m */,
-			);
-			name = Implementations;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DD7CF8E511720A330028A53F /* Headers */ = {
+		1523666D240AA513008861E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7CFA0911721C4B0028A53F /* RichTextKit_Prefix.pch in Headers */,
-				DD7CFA3711721D890028A53F /* RichTextKit.h in Headers */,
-				DDF4001311947346001CB9E3 /* RTKCaret.h in Headers */,
-				DDF4001511947346001CB9E3 /* RTKCaretLoupeView.h in Headers */,
-				DDF4001711947346001CB9E3 /* RTKDocument.h in Headers */,
-				DDF4001911947346001CB9E3 /* RTKLoupeView.h in Headers */,
-				DDF4001B11947346001CB9E3 /* RTKSelectionHandle.h in Headers */,
-				DDF4001D11947346001CB9E3 /* RTKSelectionLoupeView.h in Headers */,
-				DDF4001F11947346001CB9E3 /* RTKTextPosition.h in Headers */,
-				DDF4002111947346001CB9E3 /* RTKTextRange.h in Headers */,
-				DDF4002311947346001CB9E3 /* RTKView.h in Headers */,
+				15236693240AA56D008861E0 /* RTKTextRange.h in Headers */,
+				15236676240AA513008861E0 /* RichTextKit.h in Headers */,
+				15236691240AA56D008861E0 /* RTKCaretLoupeView.h in Headers */,
+				152366A2240AA56D008861E0 /* RTKSelectionHandle.h in Headers */,
+				15236696240AA56D008861E0 /* RTKSelectionLoupeView.h in Headers */,
+				15236699240AA56D008861E0 /* RTKTextPosition.h in Headers */,
+				1523669B240AA56D008861E0 /* RTKCaret.h in Headers */,
+				15236694240AA56D008861E0 /* RTKDocument.h in Headers */,
+				152366A1240AA56D008861E0 /* RTKView.h in Headers */,
+				1523669E240AA56D008861E0 /* RTKLoupeView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		15236671240AA513008861E0 /* RichTextKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1523667E240AA513008861E0 /* Build configuration list for PBXNativeTarget "RichTextKit" */;
+			buildPhases = (
+				1523666D240AA513008861E0 /* Headers */,
+				1523666E240AA513008861E0 /* Sources */,
+				1523666F240AA513008861E0 /* Frameworks */,
+				15236670240AA513008861E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichTextKit;
+			productName = RichTextKit;
+			productReference = 15236672240AA513008861E0 /* RichTextKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1D6058900D05DD3D006BFB54 /* Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Demo" */;
@@ -271,29 +271,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD7CFCBD11725E980028A53F /* PBXTargetDependency */,
+				15236678240AA513008861E0 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = RichTextKit;
 			productReference = 1D6058910D05DD3D006BFB54 /* RichTextKit.app */;
 			productType = "com.apple.product-type.application";
-		};
-		DD7CF8E811720A330028A53F /* RichTextKitMobile */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD7CF8EF11720A600028A53F /* Build configuration list for PBXNativeTarget "RichTextKitMobile" */;
-			buildPhases = (
-				DD7CF8E511720A330028A53F /* Headers */,
-				DD7CF8E611720A330028A53F /* Sources */,
-				DD7CF8E711720A330028A53F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RichTextKitMobile;
-			productName = RichTextKitMobile;
-			productReference = DD7CF8E911720A330028A53F /* libRichTextKit.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -302,6 +285,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					15236671240AA513008861E0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RichTextKit" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -316,12 +304,19 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Demo */,
-				DD7CF8E811720A330028A53F /* RichTextKitMobile */,
+				15236671240AA513008861E0 /* RichTextKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		15236670240AA513008861E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +333,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1523666E240AA513008861E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1523669F240AA56D008861E0 /* RTKDocument.m in Sources */,
+				15236695240AA56D008861E0 /* RTKLoupeView.m in Sources */,
+				1523669C240AA56D008861E0 /* RTKTextPosition.m in Sources */,
+				15236697240AA56D008861E0 /* RTKSelectionLoupeView.m in Sources */,
+				15236698240AA56D008861E0 /* RTKCaretLoupeView.m in Sources */,
+				1523669D240AA56D008861E0 /* RTKTextRange.m in Sources */,
+				1523669A240AA56D008861E0 /* RTKCaret.m in Sources */,
+				15236692240AA56D008861E0 /* RTKSelectionHandle.m in Sources */,
+				152366A0240AA56D008861E0 /* RTKView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,33 +359,109 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD7CF8E611720A330028A53F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DDF4001411947346001CB9E3 /* RTKCaret.m in Sources */,
-				DDF4001611947346001CB9E3 /* RTKCaretLoupeView.m in Sources */,
-				DDF4001811947346001CB9E3 /* RTKDocument.m in Sources */,
-				DDF4001A11947346001CB9E3 /* RTKLoupeView.m in Sources */,
-				DDF4001C11947346001CB9E3 /* RTKSelectionHandle.m in Sources */,
-				DDF4001E11947346001CB9E3 /* RTKSelectionLoupeView.m in Sources */,
-				DDF4002011947346001CB9E3 /* RTKTextPosition.m in Sources */,
-				DDF4002211947346001CB9E3 /* RTKTextRange.m in Sources */,
-				DDF4002411947346001CB9E3 /* RTKView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DD7CFCBD11725E980028A53F /* PBXTargetDependency */ = {
+		15236678240AA513008861E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD7CF8E811720A330028A53F /* RichTextKitMobile */;
-			targetProxy = DD7CFCBC11725E980028A53F /* PBXContainerItemProxy */;
+			target = 15236671240AA513008861E0 /* RichTextKit */;
+			targetProxy = 15236677240AA513008861E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1523667C240AA513008861E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = RichTextKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.lvv.RichTextKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1523667D240AA513008861E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = RichTextKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.lvv.RichTextKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,6 +478,7 @@
 				GCC_PREFIX_HEADER = RichTextKit_Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/include/\"";
 				INFOPLIST_FILE = "RichTextKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -416,6 +504,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RichTextKit_Prefix.pch;
 				INFOPLIST_FILE = "RichTextKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RichTextKit;
 				SDKROOT = iphoneos;
@@ -499,37 +588,18 @@
 			};
 			name = Release;
 		};
-		DD7CF8ED11720A330028A53F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = RichTextKit;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		DD7CF8EE11720A330028A53F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = RichTextKitMobile;
-				SDKROOT = iphoneos;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1523667E240AA513008861E0 /* Build configuration list for PBXNativeTarget "RichTextKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1523667C240AA513008861E0 /* Debug */,
+				1523667D240AA513008861E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -544,15 +614,6 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD7CF8EF11720A600028A53F /* Build configuration list for PBXNativeTarget "RichTextKitMobile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD7CF8ED11720A330028A53F /* Debug */,
-				DD7CF8EE11720A330028A53F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

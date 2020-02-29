@@ -1,5 +1,5 @@
 //
-//  EditorSelectionHandle.h
+//  EditorTextPosition.h
 //  CoreTextEditor
 //
 //  The MIT License
@@ -27,19 +27,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    RTKSelectionHandlePostitionNone = 0,
-	RTKSelectionHandlePostitionStart,
-    RTKSelectionHandlePostitionEnd
-} RTKSelectionHandlePostition;
-
-@interface RTKSelectionHandle : UIView {
-	RTKSelectionHandlePostition _position;
-	UIImageView *_bull;
+@interface RTKTextPosition : UITextPosition {
+	NSUInteger position;
 }
 
-- (id)initWithFrame:(CGRect)frame position:(RTKSelectionHandlePostition)position;
-- (void)setCaretRect:(CGRect)rect;
+@property (nonatomic, assign) NSUInteger position;
 
++ (instancetype) positionWithInteger:(NSUInteger)position;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  EditorSelectionHandle.m
+//  EditorTextRange.m
 //  CoreTextEditor
 //
 //  The MIT License
@@ -25,39 +25,60 @@
 //  THE SOFTWARE.
 
 
-#import "RTKSelectionHandle.h"
+#import "RTKTextRange.h"
+#import "RTKTextPosition.h"
 
-@implementation RTKSelectionHandle
+@implementation RTKTextRange
++ (instancetype)rangeWithStart:(RTKTextPosition *)startPosition end:(RTKTextPosition *)endPosition;
+{
+	RTKTextRange *e = [[RTKTextRange alloc] init];
+	[e setStartPostion:startPosition];
+	[e setEndPostion:endPosition];
 
-
-- (id)initWithFrame:(CGRect)frame position:(RTKSelectionHandlePostition)position {
-    if ((self = [super initWithFrame:frame])) {
-		// Initialization code
-		[self setBackgroundColor:[UIColor blueColor]];
-
-		_position = position;
-		_bull = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"RTKSelectionHandle.png"]];
-		
-		[self addSubview:_bull];
-		
-    }
-    return self;
+	return e;
 }
 
--(void)setCaretRect:(CGRect)rect;
+- (BOOL)isEmpty;
 {
-	[self setFrame:rect];
+	return ([(RTKTextPosition *)_end position] - [(RTKTextPosition *)_start position]) == 0;
+}
 
-	CGPoint myCenter = CGPointZero;
+- (NSUInteger)length;
+{
+	return [(RTKTextPosition *)_end position] - [(RTKTextPosition *)_start position];
+}
+
+- (UITextPosition *)start;
+{
+	return _start;
+}
+
+- (void)setStartPostion:(RTKTextPosition *)position;
+{
+	_start = position;
+}
+
+- (UITextPosition *)end;
+{
+	return _end;
+}
+
+- (void)setEndPostion:(RTKTextPosition *)position;
+{
+	_end = position;
+}
+
+#pragma mark -
+#pragma mark NSCopying;
+
+- (instancetype)copyWithZone:(NSZone *)zone
+{
+	RTKTextRange *copy = [[[self class] allocWithZone: zone] init];
+
+	[copy setEndPostion:(RTKTextPosition *)[self end]];
+	[copy setStartPostion:(RTKTextPosition *)[self start]];
 	
-	myCenter.x = self.bounds.size.width / 2;
-	if (_position == RTKSelectionHandlePostitionStart) {
-		myCenter.y = -6;
-	} else {
-		myCenter.y = self.bounds.size.height + 6;
-	}
-	[_bull setCenter:myCenter];
-	[_bull setNeedsDisplay];
+	return copy;
 }
 
 

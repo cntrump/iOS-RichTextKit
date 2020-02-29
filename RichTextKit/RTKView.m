@@ -1,5 +1,5 @@
 //
-//  EditorTextPosition.h
+//  EditorScrollView.m
 //  CoreTextEditor
 //
 //  The MIT License
@@ -25,14 +25,38 @@
 //  THE SOFTWARE.
 
 
-#import <UIKit/UIKit.h>
+#import "RTKView.h"
+#import "RTKDocument.h"
 
-@interface RTKTextPosition : UITextPosition {
-	NSUInteger position;
+@implementation RTKView
+
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)docDel {
+	if ((self = [super initWithFrame:frame])) {
+		
+		self.autoresizesSubviews = NO;
+		//self.delegate = self;
+		self.userInteractionEnabled = YES;
+		self.minimumZoomScale = 1.0f;
+		self.maximumZoomScale = 1.0f;
+		self.scrollEnabled  = YES;
+		self.bounces = YES;
+		self.bouncesZoom = NO;
+		self.contentSize = CGSizeMake(frame.size.width, frame.size.height ); // will auto rezies baed on content.
+		self.scrollsToTop = YES;
+		self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+		
+		// Doc view will self re-adjust height based on text length.
+		docView = [[RTKDocument alloc] initWithFrame:CGRectInset(frame, 5.0f, 0.0f) delegate:docDel];
+		[docView setParentScrollView:self]; // TODO: move to a delegate.
+		[self addSubview:docView];
+		
+		_dragEditingActive = NO;
+
+	}
+	return self;
 }
 
-@property (nonatomic, assign) NSUInteger position;
-
-+ (id) positionWithInteger:(NSUInteger)position;
+#pragma mark -
+#pragma mark Touch Events
 
 @end

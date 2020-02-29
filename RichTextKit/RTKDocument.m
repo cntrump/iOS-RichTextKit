@@ -88,7 +88,7 @@
 #pragma mark -
 #pragma mark Initialization
 
-- (id)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)delegate;
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)delegate;
 {
 	if ((self = [super initWithFrame:frame])) {
 		
@@ -1081,7 +1081,7 @@
 - (NSString *)textInRange:(UITextRange *)range;
 {
 	DebugLog(@"%@",[NSThread callStackSymbols]);
-	const int length = [(RTKTextPosition *)range.end position] - [(RTKTextPosition *)range.start position];
+	const NSUInteger length = [(RTKTextPosition *)range.end position] - [(RTKTextPosition *)range.start position];
 	unichar chars[length];
 	[[self.textStore mutableString] getCharacters:chars range:NSMakeRange([(RTKTextPosition *)range.start position], length)];
 	return [NSString stringWithCharacters:chars length:length];
@@ -1365,8 +1365,8 @@
 	 Declared in NSObjCRuntime.h.
 	 */
 	
-	int a = [(RTKTextPosition *)position position];
-	int b = [(RTKTextPosition *)other position];
+	NSUInteger a = [(RTKTextPosition *)position position];
+	NSUInteger b = [(RTKTextPosition *)other position];
 	
 	NSComparisonResult result;
 	if ( a < b ) result = NSOrderedAscending;
@@ -1381,8 +1381,8 @@
 {
 	DebugLog(@"%@",[NSThread callStackSymbols]);
 	
-	int a = [(RTKTextPosition *)from position];
-	int b = [(RTKTextPosition *)toPosition position];
+	NSUInteger a = [(RTKTextPosition *)from position];
+	NSUInteger b = [(RTKTextPosition *)toPosition position];
 	NSInteger result = b - a;
 	
 	DebugLog(@"from: %d to: %d result: %d",a,b,result);
@@ -1462,7 +1462,7 @@
 	CGPathAddRect(path, NULL, textBounds);
 	
 	// Get the string up to the end of the range
-	int caretIndex = [(RTKTextPosition *)position position];
+	NSUInteger caretIndex = [(RTKTextPosition *)position position];
 	
 	NSAttributedString *subString = [textStore attributedSubstringFromRange:NSMakeRange([(RTKTextPosition *)[self beginningOfDocument] position], caretIndex)];
     CFMutableAttributedStringRef attrString = (__bridge CFMutableAttributedStringRef)subString;

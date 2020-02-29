@@ -85,7 +85,7 @@
 
 @property (nonatomic, retain) NSMutableAttributedString *textStore;
 
-- (id)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)delegate;
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<RTKDocumentDelegate>)delegate;
 
 
 #pragma mark -

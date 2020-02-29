@@ -1,6 +1,6 @@
 //
-//  CustomView.m
-//  MaskTest
+//  EditorTextPosition.m
+//  CoreTextEditor
 //
 //  The MIT License
 //  
@@ -25,19 +25,19 @@
 //  THE SOFTWARE.
 
 
-#import "RTKCaretLoupeView.h"
-#import <QuartzCore/QuartzCore.h>
+#import "RTKTextPosition.h"
 
-@implementation RTKCaretLoupeView
 
-- (id)initWithFrame:(CGRect)frame {
-	UIImage *mask = [UIImage imageNamed:@"RTKCaretLoupeMask.png"];
-	if (self = [super initWithFrame:CGRectMake(0.0f, 0.0f, mask.size.width, mask.size.height)]) {
-		self.backgroundColor = [UIColor clearColor];
-		_mask = mask;
-		_loop = [UIImage imageNamed:@"RTKCaretLoupe.png"];
-	}
-	return self;
+@implementation RTKTextPosition
+
+@synthesize position;
+
++ (instancetype) positionWithInteger:(NSUInteger)pos;
+{
+	RTKTextPosition *e = [[RTKTextPosition alloc] init];
+	e.position = pos;
+    
+	return e;
 }
 
 @end
